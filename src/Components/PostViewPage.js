@@ -21,7 +21,9 @@ function PostViewPage() {
         e.preventDefault();
         const { name, location, description, postImage } = userData;
         console.log(postImage)
-        fetch("http://localhost:8000/api/v1/posts", {
+        let url = "https://instaclone-ljmn.onrender.com/api/v1/posts";
+        // let url = "http://localhost:8000/api/v1/posts";
+        fetch(url, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -37,7 +39,9 @@ function PostViewPage() {
     }
 
     const getUserData = async () => {
-        await fetch("http://localhost:8000/api/v1/posts", {
+        let url = "https://instaclone-ljmn.onrender.com/api/v1/posts";
+        // let url = "http://localhost:8000/api/v1/posts"
+        await fetch(url, {
             method: "GET",
             headers: {
                 'Accept': 'application/json',
@@ -71,14 +75,18 @@ function PostViewPage() {
 
     const deletePost = (id)=>{
         console.log(id)
-        axios.delete(`http://localhost:8000/api/v1/posts/${id}`)
+        let url = `https://instaclone-ljmn.onrender.com/api/v1/posts/${id}`;
+        // let url = `http://localhost:8000/api/v1/posts/${id}`
+        axios.delete(url)
         .then((res) => window.location.reload())
         .catch((err) => console.log(err));
     }
     const updateLikes = (id)=>{
         // console.log(new Date("06-08-1996"))
         console.log(id)
-        axios.put(`http://localhost:8000/api/v1/posts/${id}`)
+        let url = `https://instaclone-ljmn.onrender.com/api/v1/posts/${id}`;
+        // let url = `http://localhost:8000/api/v1/posts/${id}`
+        axios.put(url)
         .then((res) => window.location.reload())
         .catch((err) => console.log(err));
     }
