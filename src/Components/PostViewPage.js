@@ -114,7 +114,10 @@ function PostViewPage() {
                                 </div>
                                 <div className='date'>{data.date.split(" ")[2] + " " + data.date.split(" ")[1] + " " + data.date.split(" ")[3]}</div>
                             </div>
-                            <div className='description'>{data.description}</div>
+                            <div>
+                                <div className='description'>{data.description}</div>
+                            </div>
+                            
                         </div>
                     })}
                 </div>
