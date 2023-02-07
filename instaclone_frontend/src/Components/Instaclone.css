@@ -1,0 +1,226 @@
+#mainContainer{
+    width: 800px;
+    height: 500px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px gray;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.home img{
+    width: 62%;
+    border-radius: 10px;
+}
+#home{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#home button{
+    width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+#header{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    position: sticky;
+    top: 0px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#heading{
+    margin-left: 20px;
+    font-size: xx-large;
+}
+.header img{
+    width: 50px;
+}
+#camera{
+    width: 60px;
+    height: 60px;
+}
+
+#posts{
+    width: 40%;
+    height: 100vh;
+    background-image: linear-gradient(#fd5949, #d6249f,#fd5949, #d6249f, #fd5949);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+#postData{
+    width: 50%;
+    height: 350px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px 5px rgb(7, 172, 238);
+}
+#form{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#form input{
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+}
+input[type="file"]{
+    display: none;
+}
+#form button{
+    margin-top: 10px;
+    width: 60%;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.postImages{
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+}
+#form button:hover{
+    background-color: #ed7fca;
+}
+#data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.data{
+    margin-top: 20px;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px 2px blueviolet;
+}
+.cardHead{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardheadName{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu{
+    margin-right: 20px;
+}
+.name{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.location{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+}
+
+.data img{
+    width: 100%;
+}
+.likesDate{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.likes{
+    /* margin-left: 10px; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.date{
+    margin-right: 10px;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.description{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.likebtn{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: blue;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2px;
+    background-color: #285AEB;
+}
+
+/* Handle */
+#posts::-webkit-scrollbar-thumb {
+    background: rgb(69, 91, 118);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
